@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+.navbar {
+    padding: 20px;
+    background-color: #fafafa;
+    color: #55c0e7;
+    position: relative;
+
+    .menu--logo {
+        font-size: 24px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .hamburger {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .menu--list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fafafa;
+        width: 100%;
+    }
+
+    .hamburger:focus + .menu--list {
+        display: block;
+    }
+}
+
+.list--item {
+    display: block;
+    margin-bottom: 10px;
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
