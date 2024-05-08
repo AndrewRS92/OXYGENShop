@@ -14,7 +14,7 @@ body {
     color: #55c0e7;
     position: relative;
 
-    .menu--logo {
+    .navbar__logo {
         font-size: 24px;
         display: inline-block;
         margin-right: 20px;
@@ -27,7 +27,7 @@ body {
         cursor: pointer;
     }
 
-    .menu--list {
+    .navbar__menuList {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -39,12 +39,12 @@ body {
         width: 100%;
     }
 
-    .hamburger:focus + .menu--list {
+    .hamburger:focus + .navbar__menuList {
         display: block;
     }
 }
 
-.list--item {
+.navbar__menuList__item {
     display: block;
     margin-bottom: 10px;
 
