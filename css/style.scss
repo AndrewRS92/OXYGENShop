@@ -5,17 +5,17 @@
 }
 
 body {
-    min-width: 320px;
+    min-width: 20em;
 }
 
 .navbar {
-    padding: 20px;
+    padding: 1.25em;
     background-color: #fafafa;
     color: #55c0e7;
     position: relative;
 
     .navbar__logo {
-        font-size: 24px;
+        font-size: 1.5em;
         display: inline-block;
         margin-right: 20px;
     }
@@ -23,7 +23,7 @@ body {
     .hamburger {
         display: inline-block;
         vertical-align: middle;
-        margin-right: 10px;
+        margin-right: 0.625em;
         cursor: pointer;
     }
 
@@ -46,7 +46,7 @@ body {
 
 .navbar__menuList__item {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 
     a {
         color: #000;
