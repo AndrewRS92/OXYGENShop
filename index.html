@@ -9,23 +9,28 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="navbar__logo">OXYGENShop</a>
-            <img src="images/Menu.png" alt="Menu" class="menu-icon">
+            <a><h1 class="menu__logo">OXYGENShop</h1></a>  
             <ul class="navbar__menuList">
-                <li class="navbar__menuList__item"><a href="#about">WHY US</a></li>
-                <li class="navbar__menuList__item"><a href="#articles">BENEFITS</a></li>
-                <li class="navbar__menuList__item"><a href="#pricing">PRICES</a></li>
-                <li class="navbar__menuList__item"><a href="#form">CONTACT</a></li>
+                <li class="navbar__menuList__item"><a>WHY US</a></li>
+                <li class="navbar__menuList__item"><a>BENEFITS</a></li>
+                <li class="navbar__menuList__item"><a>PRICES</a></li>
+                <li class="navbar__menuList__item"><a>CONTACT</a></li>
             </ul>
+        </ul>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         </nav>    
     </header> 
     <main>
         <section class="main">
             <h2>Sell More!</h2>
             <p>Open a shop on our platform and increase your sales</p>
-            <a href="#" class="main__open button">
+            <button href="#" class="main__open button">
                 <p>Open your shop</p>
-            </a>
+            </button>
         </section>
         <div class="background" id="background">
             <div class="background__image"></div>
@@ -36,7 +41,7 @@
             <img src="images/Person 2.png" class="person" alt="person">
             <img src="images/redEllipse.png" alt="red_ellip">
             <p class="quantity">100000</p>
-            <p class="item">Daily Entries</p>
+            <p class="object">Daily Entries</p>
          </div>   
          <div class="vector">
             <img src="images/Eye 2.png" class="eye" alt="eye">
@@ -54,10 +59,10 @@
 
         <section class="articles" id="articles">
             <div class="art1">
-                <img src="images/Background 1.png" alt="computer">
-                <img src="images/rombo.png" alt="rombo_rojo">
                 <img src="images/Macbook2 2.png" alt="computer">
-                <!-- <img src="images/Rectangle 5 PC.png" alt="rombo_rojo"> -->
+                <img src="images/rombo.png" alt="rombo_rojo">
+                <img src="images/MacbookPc.png" alt="computer">
+                <img src="images/redRectanglePc1.png" alt="rombo_rojo">
                 <h3>Be always First</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -65,8 +70,8 @@
             <div class="art2">
                 <img src="images/iPhone2 2.png" alt="phone">
                 <img src="images/EllipsePhone.png" alt="circulo_azul">
-                <!-- <img src="" alt="phone">
-                <img src="" alt="circulo_azul"> -->
+                <img src="images/iPhonePC.png" alt="phone">
+                <img src="images/blueEllipsePC.png" alt="circulo_azul">
                 <h3>Your shop is were you are!</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -77,7 +82,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>                    
                 </div>
                 <div class="art3__trumpet">
-                    <img src="" alt="">
+                    <img src="images/TrumpetPc.png" alt="Rectangle green">
+                    <img src="images/TrumpetPc.png" alt="Rectangle green">
+                    <img src="images/TrumpetPc.png" alt="Rectangle green">
+                    <img src="images/TrumpetPc.png" alt="Rectangle green">
                 </div>
             </section>
 
@@ -138,7 +146,8 @@
         </section>  
 
 
-        <section class="form" id="form"> 
+        <aside class="form" id="form"> 
+            <form id="myform">
             <div class="form__text">
                 <h3>Any questions?</h3>
                 <p class="form__sub">Leave your email address or call us!</p>
@@ -150,22 +159,22 @@
             <div class="form__fields">           
                 <label for="NAME">NAME</label><br>
                     <input type="text" id="name" name="NAME" size="30%" class="name"><br>
-                    <div class="namewar"></div>
                 <label for="EMAIL">EMAIL</label><br>
                     <input type="text" id="email" name="EMAIL" size="30%" class="email"><br>
-                    <div class="emailwar"></div>
-                <div class="protec__datas">
+                <div class="protect__data">
                     <input type="checkbox" id="consent" name="accept" class="accept" >
                     <p class="terms">
                         I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)                            
                     </p>                        
                 </div>
-                <button type="submit" id="enviar">Send</button>
-        </section>  
+                <button type="submit" id="send">Send</button>
+
+                
+            </aside>  
         <footer class="foot">
             <h1>OXYGENShop</h1>
             <p>&copy; 2023 OXYGEN, All Rights Reserved</p>
-            <adiv class="redes">
+            <adiv class="networks">
                 <a href="https://twitter.com" target="_blank"><img src="images/logoTwitter.png" alt="logo twitter"></a>
                 <a href="https://facebook.com" target="_blank"><img src="images/logoFace.png" alt="logo facebook"></a>
             </div>
