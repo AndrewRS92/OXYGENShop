@@ -58,17 +58,6 @@ header .navbar .hamburger .bar {
   background-color: #08A6E4;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-width: 20em;
-  position: relative;
-}
-
 .main {
   margin-top: 10.625em;
   text-align: center;
@@ -658,6 +647,57 @@ footer .networks {
 footer .networks img {
   margin: 0 5px 0;
   cursor: pointer;
+}
+
+.statistics {
+  position: relative;
+}
+.statistics .vector {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.563em;
+}
+.statistics .vector .person {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.statistics .vector .eye {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.statistics .vector .cards {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.statistics .quantity {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 1.25em;
+  text-align: center;
+  letter-spacing: 0.3725em;
+  line-height: 1.5em;
+}
+.statistics .object {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 1.0625em;
+  text-align: center;
+  font-style: normal;
+  margin-top: 1em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 20em;
+  position: relative;
 }
 
 @media only screen and (min-width: 1000px) {

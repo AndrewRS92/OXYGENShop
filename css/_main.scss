@@ -1,7 +1,7 @@
 .main {
 	margin-top: 10.625em;
 	text-align: center;
-	color: $black2;
+	color: $color_4;
 	h2 {
 		font-family: $font-family_3;
 		font-style: normal;
@@ -26,7 +26,7 @@
 		border-radius: 2.5em;
 		cursor: pointer;
 		p {
-			color: $white;
+			color: $color_5;
 			font-family: $font-family_4;
 			font-size: 1rem;
 			font-weight: 700;
@@ -511,7 +511,7 @@
 			font-size: 11px;
 			line-height: 15px;
 			letter-spacing: 3.28px;
-			color: $blue;
+			color: $color_1;
 			margin-bottom: 42px;
 		}
 		input {
@@ -579,7 +579,7 @@ footer {
 		font-weight: 300;
 		line-height: 30px;
 		display: inline-block;
-		color: $blue;
+		color: $color_1;
 	}
 	p {
 		font-family: $font-family_2;

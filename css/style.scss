@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-$blue: #08A6E4;
+$color_1: #08A6E4;
 $color_2: #a5a5a5;
-$black: black;
-$black2: #000000;
-$white: white;
+$color_3: black;
+$color_4: #000000;
+$color_5: white;
 $color_6: #13253B;
 $red: #FB3B64;
 $color_8: #FFFFFF;
@@ -24,6 +24,7 @@ $background-color_5: #55DFB4;
 
 @import "header";
 @import "main";
+@import "statistics";
 
 * {
 	box-sizing: border-box;

@@ -1,0 +1,39 @@
+.statistics {
+	position: relative;
+	.vector {
+		position: relative;
+		text-align: center;
+		margin-bottom: 1.563em;
+		.person {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+		}
+		.eye {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+		}
+		.cards {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+		}
+	}
+	.quantity {
+		font-family: $font-family_1;
+		font-weight: 800;
+		font-size: 1.25em;
+		text-align: center;
+		letter-spacing: 0.3725em;
+		line-height: 1.5em;
+	}
+	.object {
+		font-family: $font-family_1;
+		font-weight: 400;
+		font-size: 1.0625em;
+		text-align: center;
+		font-style: normal;
+		margin-top: 1em;
+	}
+}
