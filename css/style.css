@@ -689,6 +689,136 @@ footer .networks img {
   margin-top: 1em;
 }
 
+.articles {
+  background-color: #F7F7F7;
+  padding: 2.8125em 0;
+}
+.articles .art1 {
+  position: relative;
+  height: 23.125em;
+  border: 0.0625em solid #E8E9ED;
+  background-color: #FFFFFF;
+  margin: 0 1.875em 2.625em;
+  border-radius: 0.3125em;
+}
+.articles .art1 img:nth-child(3) {
+  display: none;
+}
+.articles .art1 img:nth-child(4) {
+  display: none;
+}
+.articles .art1 img:nth-child(1) {
+  position: absolute;
+  top: 2.3125em;
+  right: 15%;
+  z-index: 1;
+}
+.articles .art1 img:nth-child(2) {
+  position: absolute;
+  top: 0.9375em;
+  right: 15%;
+}
+.articles .art1 h3 {
+  height: 72px;
+  width: 80%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 174px 94px 10px 22px;
+}
+.articles .art1 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 21px 30px;
+}
+.articles .art2 {
+  position: relative;
+  height: 370px;
+  border: 1px solid #E8E9ED;
+  background-color: #FFFFFF;
+  margin: 0px 30px 42px;
+  border-radius: 5px;
+}
+.articles .art2 img:nth-child(3) {
+  display: none;
+}
+.articles .art2 img:nth-child(4) {
+  display: none;
+}
+.articles .art2 img:nth-child(1) {
+  position: absolute;
+  top: 19.01px;
+  right: 15%;
+  z-index: 1;
+}
+.articles .art2 img:nth-child(2) {
+  position: absolute;
+  top: 12px;
+  right: 31%;
+}
+.articles .art2 h3 {
+  height: 72px;
+  width: 80%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 174px 94px 10px 22px;
+}
+.articles .art2 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 21px 30px;
+}
+.articles .art3__text {
+  position: relative;
+  height: 100%;
+  max-height: 314px;
+  border: 1px solid #E8E9ED;
+  background-color: #FFFFFF;
+  margin: 42px 30px 0;
+  border-radius: 5px;
+}
+.articles .art3__text h3 {
+  width: 80%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 31px 6% 6%;
+}
+.articles .art3__text p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 31px 6% 6%;
+}
+.articles .art3__trumpet {
+  position: relative;
+  height: 195px;
+  margin: 0px 30px;
+  background-color: #55DFB4;
+  border-radius: 5px;
+}
+.articles .art3__trumpet img {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  max-width: 350px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
