@@ -1,0 +1,93 @@
+#myform {
+	position: relative;
+	margin-left: 8%;
+	.form__text {
+		h3 {
+			font-family: $font-family_1;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 47px;
+			margin: 50px 0 5px;
+		}
+		.form__sub {
+			font-family: $font-family_2;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 38px;
+		}
+		.data__contact {
+			font-family: $font-family_2;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 22px;
+			color: $color_11;
+			margin-bottom: 17px;
+			img {
+				margin-right: 11px;
+			}
+		}
+	}
+	.form__fields {
+		label {
+			font-family: $font-family_2;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 15px;
+			letter-spacing: 3.28px;
+			color: $color_1;
+			margin-bottom: 42px;
+		}
+		input {
+			border: none;
+			border-bottom: 1px solid #95989A;
+			margin: 42px 0;
+			font-size: 1rem;
+			&:focus {
+				outline: none;
+			}
+		}
+		.protect__data {
+			display: table;
+			position: relative;
+			width: 85%;
+			.aceptar {
+				display: table-cell;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			p {
+				display: table-cell;
+				vertical-align: middle;
+				height: 144px;
+				font-family: $font-family_2;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 16px;
+				color: $color_12;
+				width: 95%;
+			}
+		}
+		#send {
+			height: 57px;
+			width: 60%;
+			background: #08A6E4;
+			color: $color_8;
+			font-family: $font-family_5;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 13px;
+			line-height: 18px;
+			border: 1px solid #08A6E4;
+			box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+			border-radius: 35px;
+			margin: 33px 0px 0px 31%;
+			cursor: pointer;
+		}
+	}
+}

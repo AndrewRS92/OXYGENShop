@@ -1,0 +1,245 @@
+.pricing {
+	position: relative;
+	h3 {
+		font-family: $font-family_1;
+		font-size: 36px;
+		text-align: center;
+		font-weight: 400;
+		line-height: 42px;
+		margin-bottom: 14px;
+	}
+	.pricing__table {
+		.basic {
+			&:hover {
+				box-shadow: 5px 10px 27px rgba(251, 59, 100, 0.9);
+				transform: scale(1.15);
+				transition: transform 0.3s ease-in-out;
+				border-width: 2px;
+			}
+			position: relative;
+			border: 1px solid #FB3B64;
+			border-radius: 18px;
+			margin: 0px 11% 54px;
+			width: 75%;
+			padding: 25px 0;
+			display: table;
+			div {
+				display: table-cell;
+				vertical-align: middle;
+				width: 50%;
+			}
+			.basic__tittle {
+				p {
+					text-align: center;
+					font-family: $font-family_1;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					color: $color_6;
+				}
+				.basic__pricing {
+					font-family: $font-family_2;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 46px;
+					line-height: 64px;
+					color: $red;
+				}
+			}
+			ul {
+				text-align: left;
+				li {
+					list-style-type: none;
+					font-family: $font-family_2;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 19px;
+					margin-bottom: 20px;
+				}
+				img {
+					width: 14px;
+					margin-right: 10px;
+				}
+			}
+			.basic__button {
+				position: absolute;
+				bottom: -25px;
+				left: 25%;
+				width: 50%;
+				height: 50px;
+				border-radius: 23px;
+				cursor: pointer;
+				background: #EB476E;
+				border: 1px solid #FB3B64;
+				p {
+					font-family: $font-family_2;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 13px;
+					line-height: 18px;
+					color: $color_8;
+				}
+			}
+		}
+		.premium {
+			&:hover {
+				box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.9);
+				transform: scale(1.15);
+				transition: transform 0.3s ease-in-out;
+				border-width: 2px;
+			}
+			position: relative;
+			border: 1px solid #55DFB4;
+			border-radius: 18px;
+			margin: 0px 11% 54px;
+			width: 75%;
+			padding: 25px 0;
+			display: table;
+			div {
+				display: table-cell;
+				vertical-align: middle;
+				width: 50%;
+			}
+			.premium__tittle {
+				p {
+					text-align: center;
+					font-family: $font-family_1;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					color: $color_6;
+				}
+				.premium__pricing {
+					font-family: $font-family_2;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 46px;
+					line-height: 64px;
+					color: $color_10;
+				}
+				.sub {
+					font-family: $font-family_1;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 12px;
+					line-height: 14px;
+					color: $color_6;
+				}
+			}
+			ul {
+				text-align: left;
+				li {
+					list-style-type: none;
+					font-family: $font-family_2;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 19px;
+					margin-bottom: 20px;
+				}
+				img {
+					width: 14px;
+					margin-right: 10px;
+				}
+			}
+			.premium__button {
+				position: absolute;
+				bottom: -25px;
+				left: 25%;
+				width: 50%;
+				height: 50px;
+				border-radius: 23px;
+				cursor: pointer;
+				background: #55DFB4;
+				border: 1px solid #55DFB4;
+				p {
+					font-family: $font-family_2;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 13px;
+					line-height: 18px;
+					color: $color_8;
+				}
+			}
+		}
+		.prof {
+			&:hover {
+				box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.9);
+				transform: scale(1.15);
+				transition: transform 0.3s ease-in-out;
+				border-width: 2px;
+			}
+			position: relative;
+			border: 1px solid #07ACE6;
+			border-radius: 18px;
+			margin: 0px 11% 54px;
+			width: 75%;
+			padding: 25px 0;
+			display: table;
+			div {
+				display: table-cell;
+				vertical-align: middle;
+				width: 50%;
+			}
+			.prof__tittle {
+				p {
+					text-align: center;
+					font-family: $font-family_1;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					color: $color_6;
+				}
+				.prof__pricing {
+					font-family: $font-family_2;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 46px;
+					line-height: 64px;
+					color: $color_9;
+				}
+				.sub {
+					font-family: $font-family_1;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 12px;
+					line-height: 14px;
+					color: $color_6;
+				}
+			}
+			ul {
+				text-align: left;
+				li {
+					list-style-type: none;
+					font-family: $font-family_2;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 19px;
+					margin-bottom: 20px;
+				}
+				img {
+					width: 14px;
+					margin-right: 10px;
+				}
+			}
+			.prof__button {
+				position: absolute;
+				bottom: -25px;
+				left: 25%;
+				width: 50%;
+				height: 50px;
+				border-radius: 23px;
+				cursor: pointer;
+				background: #07ACE6;
+				border: 1px solid #07ACE6;
+				p {
+					font-family: $font-family_2;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 13px;
+					line-height: 18px;
+					color: $color_8;
+				}
+			}
+		}
+	}
+}

@@ -819,6 +819,372 @@ footer .networks img {
   max-width: 350px;
 }
 
+.pricing {
+  position: relative;
+}
+.pricing h3 {
+  font-family: "Raleway";
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 42px;
+  margin-bottom: 14px;
+}
+.pricing .pricing__table .basic {
+  position: relative;
+  border: 1px solid #FB3B64;
+  border-radius: 18px;
+  margin: 0px 11% 54px;
+  width: 75%;
+  padding: 25px 0;
+  display: table;
+}
+.pricing .pricing__table .basic:hover {
+  box-shadow: 5px 10px 27px rgba(251, 59, 100, 0.9);
+  transform: scale(1.15);
+  transition: transform 0.3s ease-in-out;
+  border-width: 2px;
+}
+.pricing .pricing__table .basic div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+.pricing .pricing__table .basic .basic__tittle p {
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13253B;
+}
+.pricing .pricing__table .basic .basic__tittle .basic__pricing {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+  color: #FB3B64;
+}
+.pricing .pricing__table .basic ul {
+  text-align: left;
+}
+.pricing .pricing__table .basic ul li {
+  list-style-type: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.pricing .pricing__table .basic ul img {
+  width: 14px;
+  margin-right: 10px;
+}
+.pricing .pricing__table .basic .basic__button {
+  position: absolute;
+  bottom: -25px;
+  left: 25%;
+  width: 50%;
+  height: 50px;
+  border-radius: 23px;
+  cursor: pointer;
+  background: #EB476E;
+  border: 1px solid #FB3B64;
+}
+.pricing .pricing__table .basic .basic__button p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.pricing .pricing__table .premium {
+  position: relative;
+  border: 1px solid #55DFB4;
+  border-radius: 18px;
+  margin: 0px 11% 54px;
+  width: 75%;
+  padding: 25px 0;
+  display: table;
+}
+.pricing .pricing__table .premium:hover {
+  box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.9);
+  transform: scale(1.15);
+  transition: transform 0.3s ease-in-out;
+  border-width: 2px;
+}
+.pricing .pricing__table .premium div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+.pricing .pricing__table .premium .premium__tittle p {
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13253B;
+}
+.pricing .pricing__table .premium .premium__tittle .premium__pricing {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+  color: #55DFB4;
+}
+.pricing .pricing__table .premium .premium__tittle .sub {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #13253B;
+}
+.pricing .pricing__table .premium ul {
+  text-align: left;
+}
+.pricing .pricing__table .premium ul li {
+  list-style-type: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.pricing .pricing__table .premium ul img {
+  width: 14px;
+  margin-right: 10px;
+}
+.pricing .pricing__table .premium .premium__button {
+  position: absolute;
+  bottom: -25px;
+  left: 25%;
+  width: 50%;
+  height: 50px;
+  border-radius: 23px;
+  cursor: pointer;
+  background: #55DFB4;
+  border: 1px solid #55DFB4;
+}
+.pricing .pricing__table .premium .premium__button p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.pricing .pricing__table .prof {
+  position: relative;
+  border: 1px solid #07ACE6;
+  border-radius: 18px;
+  margin: 0px 11% 54px;
+  width: 75%;
+  padding: 25px 0;
+  display: table;
+}
+.pricing .pricing__table .prof:hover {
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.9);
+  transform: scale(1.15);
+  transition: transform 0.3s ease-in-out;
+  border-width: 2px;
+}
+.pricing .pricing__table .prof div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+.pricing .pricing__table .prof .prof__tittle p {
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13253B;
+}
+.pricing .pricing__table .prof .prof__tittle .prof__pricing {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+  color: #07ACE6;
+}
+.pricing .pricing__table .prof .prof__tittle .sub {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #13253B;
+}
+.pricing .pricing__table .prof ul {
+  text-align: left;
+}
+.pricing .pricing__table .prof ul li {
+  list-style-type: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.pricing .pricing__table .prof ul img {
+  width: 14px;
+  margin-right: 10px;
+}
+.pricing .pricing__table .prof .prof__button {
+  position: absolute;
+  bottom: -25px;
+  left: 25%;
+  width: 50%;
+  height: 50px;
+  border-radius: 23px;
+  cursor: pointer;
+  background: #07ACE6;
+  border: 1px solid #07ACE6;
+}
+.pricing .pricing__table .prof .prof__button p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+#myform {
+  position: relative;
+  margin-left: 8%;
+}
+#myform .form__text h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  margin: 50px 0 5px;
+}
+#myform .form__text .form__sub {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 38px;
+}
+#myform .form__text .data__contact {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A5A5A5;
+  margin-bottom: 17px;
+}
+#myform .form__text .data__contact img {
+  margin-right: 11px;
+}
+#myform .form__fields label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  color: #08A6E4;
+  margin-bottom: 42px;
+}
+#myform .form__fields input {
+  border: none;
+  border-bottom: 1px solid #95989A;
+  margin: 42px 0;
+  font-size: 1rem;
+}
+#myform .form__fields input:focus {
+  outline: none;
+}
+#myform .form__fields .protect__data {
+  display: table;
+  position: relative;
+  width: 85%;
+}
+#myform .form__fields .protect__data .aceptar {
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#myform .form__fields .protect__data p {
+  display: table-cell;
+  vertical-align: middle;
+  height: 144px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+  width: 95%;
+}
+#myform .form__fields #send {
+  height: 57px;
+  width: 60%;
+  background: #08A6E4;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #08A6E4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 35px;
+  margin: 33px 0px 0px 31%;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 89px;
+  left: 0px;
+  bottom: 0px;
+  margin-top: 44px;
+  background: #F7F7F7;
+  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+}
+.footer h1 {
+  margin: 22px 0 0 5%;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+  display: inline-block;
+  color: #08A6E4;
+}
+.footer p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #A5A5A5;
+  margin-left: 5%;
+}
+.footer .networks {
+  position: absolute;
+  top: 33px;
+  right: 30px;
+}
+.footer .networks img {
+  margin: 0 5px 0;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
