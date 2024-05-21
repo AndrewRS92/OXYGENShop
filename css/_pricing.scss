@@ -243,3 +243,47 @@
 		}
 	}
 }
+
+@media only screen and (min-width: 1000px)
+ {
+	.pricing {
+		display: flex;
+		flex-direction: column;
+		margin-top: 127.5px;
+		.pricing__table {
+			margin: 50px 132px 180px;
+			display: flex;
+			align-items: center;
+			.basic {
+				margin: 0 25px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.basic__pricing {
+					margin-bottom: 75px;
+				}
+			}
+			.prof {
+				margin: 0 25px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.sub {
+					margin-bottom: 61px;
+				}
+			}
+			.premium {
+				margin: 0 25px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.sub {
+					margin-bottom: 61px;
+				}
+			}
+			.txt {
+				margin-bottom: 14px;
+			}
+		}
+	}
+}

@@ -35,3 +35,20 @@
 		}
 	}
 }
+
+
+@media only screen and (min-width: 1000px)
+ {
+
+	.main {
+		.main__open {
+			max-width: 440px;
+		}
+	}
+	.background {
+		.background__image {
+			height: 594px;
+		}
+	}
+
+}

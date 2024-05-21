@@ -58,3 +58,51 @@ header {
 		}
 	}
 }
+
+
+
+
+@media only screen and (min-width: 1000px) {
+	header {
+		.navbar {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-height: 70px;
+			padding: 0;
+			.menu__logo {
+				position: relative;
+				left: 136px;
+			}
+			.navbar__menuList {
+				padding: 0;
+				height: 70px;
+				position: relative;
+				display: flex;
+				right: 115px;
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.navbar__menuList__item {
+					margin: 0;
+					height: 70px;
+					display: flex;
+					position: relative;
+					align-items: center;
+					margin-left: 105px;
+					&:hover {
+						border-bottom: 4px solid #08A6E4;
+					}
+				}
+			}
+			.hamburger {
+				display: none;
+			}
+			.hamburger.active {
+				display: none;
+			}
+		}
+	}
+}

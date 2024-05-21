@@ -91,3 +91,46 @@
 		}
 	}
 }
+
+
+@media only screen and (min-width: 1000px)
+ {
+
+	#myform {
+		margin: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		align-items: start;
+		.form__text {
+			margin-right: 113px;
+			display: flex;
+			flex-direction: column;
+			text-align: end;
+			.form__data {
+				display: flex;
+				justify-content: end;
+				.data__contact {
+					margin-left: 23px;
+				}
+			}
+			h3 {
+				margin: 0;
+			}
+		}
+		.form__fields {
+			width: 440px;
+			#name {
+				width: 80%;
+			}
+			#email {
+				width: 80%;
+			}
+			.send {
+				max-width: 226px;
+				max-height: 57px;
+			}
+		}
+	}
+
+}
