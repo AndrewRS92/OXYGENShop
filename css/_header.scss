@@ -41,9 +41,7 @@ header {
 		 }
 
 		}
-		// .close {
-		// 	display: none;
-		// }
+
 		.hamburger {
 			position: absolute;
 			display: block;
@@ -74,21 +72,18 @@ header {
                 transform: translateY(-8px) rotate(-45deg);
             }
         }
-		.navbar__menuList {
-			display: none;  // Oculta el menú por defecto.
+		.navbar__menuList.active {
+			display: block; 
 			position: absolute;
-			top: 60px;  // Ajusta según la altura de tu header.
+			top: 60px; 
 			left: 0;
 			width: 100%;
 			background-color: white;
 			list-style: none;
 			padding: 0;
 			margin: 0;
-			z-index: 1;  // Asegúrate de que el menú esté detrás del botón hamburguesa.
-		
-			&.active {
-				display: block;  // Muestra el menú cuando tiene la clase .active.
-			}
+			z-index: 1; 
+		  }
 	}
 }
 

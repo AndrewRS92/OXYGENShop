@@ -40,10 +40,6 @@ header .navbar .navbar__menuList {
   padding-top: 1.25em;
   padding-bottom: 1.25em;
   display: none;
-  z-index: 1;
-}
-header .navbar .navbar__menuList.active {
-  display: block;
 }
 header .navbar .navbar__menuList .navbar__menuList__item a {
   text-decoration: none;
@@ -81,6 +77,18 @@ header .navbar .hamburger.active .bar:nth-child(1) {
 }
 header .navbar .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+header .navbar .navbar__menuList.active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 1000px) {
