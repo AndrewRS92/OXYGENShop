@@ -26,20 +26,24 @@ header {
 			padding-top: 1.25em;
 			padding-bottom: 1.25em;
 			display: none;
-			.navbar__menuList__item {
+			
+			 .navbar__menuList__item {
 				a {
 					text-decoration: none;
 					font-family: $font-family_2;
 					font-size: 0.6875em;
 					font-weight: 700;
-					color: $color_2;
+			 		color: $color_2;
 					&:hover {
 						color: $color_3;
-						cursor: pointer;
 					}
 				}
-			}
+		 }
+
 		}
+		// .close {
+		// 	display: none;
+		// }
 		.hamburger {
 			position: absolute;
 			display: block;
@@ -48,14 +52,43 @@ header {
 			left: 90%;
 			border: none;
 			background-color: $background-color_1;
+			z-index: 2;
 			.bar {
 				display: block;
 				width: 25px;
 				height: 3px;
 				margin: 5px auto;
 				background-color: $background-color_2;
+
+				transition: all 0.3s;
 			}
 		}
+		.hamburger.active {
+            .bar:nth-child(2){
+                opacity: 0;
+            }
+            .bar:nth-child(1){
+                transform: translateY(8px) rotate(45deg);
+            }
+            .bar:nth-child(3){
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+		.navbar__menuList {
+			display: none;  // Oculta el menú por defecto.
+			position: absolute;
+			top: 60px;  // Ajusta según la altura de tu header.
+			left: 0;
+			width: 100%;
+			background-color: white;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			z-index: 1;  // Asegúrate de que el menú esté detrás del botón hamburguesa.
+		
+			&.active {
+				display: block;  // Muestra el menú cuando tiene la clase .active.
+			}
 	}
 }
 
