@@ -9,15 +9,8 @@
 		font-size: 2.188em;
 		line-height: 1.171em;
 	}
-	#progress-bar {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 0%;
-		height: 5px; // Altura de la barra de progreso
-		background-color: red; // Color de la barra de progreso
-		z-index: 10; // Asegúrate de que esté por encima de otros elementos
-	  }
+
+	
 	p {
 		font-family: $font-family_2;
 		font-size: 1em;
@@ -44,6 +37,10 @@
 		}
 	}
 }
+
+.returnTop{
+		
+}
 .background {
 	.background__image {
 		height: 16.688em;
@@ -61,6 +58,7 @@
 		text-align: center;
 		margin: 0.813em 2.25em 1.563em;
 	}
+	
 }
 
 

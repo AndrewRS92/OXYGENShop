@@ -154,7 +154,6 @@ header .navbar .navbar__menuList.active {
   font-size: 2.188em;
   line-height: 1.171em;
 }
-
 .main p {
   font-family: "Open Sans";
   font-size: 1em;
@@ -506,6 +505,23 @@ header .navbar .navbar__menuList.active {
   }
   .articles .art3 .art3__trumpet img {
     top: 75px;
+  }
+  #returnTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
   }
 }
 .pricing {
