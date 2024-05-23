@@ -891,7 +891,14 @@ header .navbar .navbar__menuList.active {
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 35px;
   margin: 33px 0px 0px 31%;
-  cursor: pointer;
+}
+#myform .form__fields .error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+#myform .form__fields input.error-border {
+  border: 2px solid red;
 }
 
 @media only screen and (min-width: 1000px) {

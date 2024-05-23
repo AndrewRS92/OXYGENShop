@@ -27,6 +27,7 @@
     <script src="main.js"></script>
     <script src="scroll.js"></script>
     <script src="btnTop.js"></script>
+    <script src="validation.js"></script>
 
     <main>
         <section class="main">
@@ -36,7 +37,7 @@
                 <p>Open your shop</p>
             </button>
         </section>
-        <div class="background" id="background">
+        <div class="background">
             <div class="background__image"></div>
             <p>The most popular sales platform in country</p>
         </div>
@@ -61,7 +62,7 @@
         </div>
         </section>
 
-        <section class="articles" id="articles">
+        <section class="articles">
             <div class="art1">
                 <img src="images/Macbook2 2.png" alt="computer">
                 <img src="images/rombo.png" alt="rombo_rojo">
@@ -93,7 +94,6 @@
                 </div>
             </section>
             <button id="returnTop">↑</button>
-      
             <section class="pricing" id="pricing">
                 <h3>Pricing</h3>
                 <div class="pricing__table">
@@ -170,7 +170,9 @@
                         I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)                            
                     </p>                        
                 </div>
-                <button type="submit" id="send">Send</button>
+
+                <span class="error" id="consentError"></span><br>
+                <button id="send">Send</button>
 
 
         <footer class="footer">
