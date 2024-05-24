@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return emailRegex.test(email);
     }
 
-
-
-
     nameInput.addEventListener("input", function() {
         if (!validateName(nameInput.value)) {
             nameInput.classList.add("error-border");
