@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const consentCheckbox = document.getElementById("consent");
-
-
+    const sendButton = document.getElementById("send");
 
     function validateName(name) {
         return /^[a-zA-Z\s]{2,100}$/.test(name);
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    
+
     nameInput.addEventListener("input", function() {
         if (!validateName(nameInput.value)) {
             nameInput.classList.add("error-border");
@@ -40,6 +39,24 @@ document.addEventListener("DOMContentLoaded", function() {
             consentCheckbox.classList.remove("error-border");
         }
     });
+    
+    sendButton.addEventListener("click", function(event) {
+        event.preventDefault();
 
+        if (validateName(nameInput.value) && validateEmail(emailInput.value) && consentCheckbox.checked) {
+            const formData = {
+                name: nameInput.value,
+                email: emailInput.value,
+                consent: consentCheckbox.checked
+            };
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+        }
+    });
 
 });
