@@ -861,10 +861,10 @@ header .navbar .navbar__menuList.active {
   position: relative;
   width: 85%;
 }
-#myform .form__fields .protect__data .aceptar {
-  display: table-cell;
-  vertical-align: middle;
-  margin-right: 10px;
+#myform .form__fields .protect__data input[type=checkbox].accept {
+  display: block;
+  margin-top: 12px;
+  margin-right: 20px;
 }
 #myform .form__fields .protect__data p {
   display: table-cell;
@@ -900,6 +900,9 @@ header .navbar .navbar__menuList.active {
 }
 #myform .form__fields input.error-border {
   border: 2px solid red;
+}
+#myform .form__fields input[type=checkbox].error-border {
+  outline: 2px solid red;
 }
 
 @media only screen and (min-width: 1000px) {

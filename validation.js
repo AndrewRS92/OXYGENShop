@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
+    const consentCheckbox = document.getElementById("consent");
 
     nameInput.addEventListener("input", function() {
         if (!validateName(nameInput.value)) {
@@ -15,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
             emailInput.classList.add("error-border");
         } else {
             emailInput.classList.remove("error-border");
+        }
+    });
+
+    consentCheckbox.addEventListener("input", function() {
+        if (!consentCheckbox.checked) {
+            consentCheckbox.classList.add("error-border");
+        } else {
+            consentCheckbox.classList.remove("error-border");
         }
     });
 
