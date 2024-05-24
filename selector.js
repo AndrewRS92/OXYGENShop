@@ -10,11 +10,24 @@ document.addEventListener("DOMContentLoaded",function(){
         .then(data => data.rates);
     }
 
-    currencySelector.addEventListener("change", function() {
-        const selectedCurrency = currencySelector.value;
-        updatePrices(selectedCurrency);
+    function updatePrices(currency){
+        fetchExchangeRates(currency)
+        .then(rates => {pricingElements.forEach(element => {
+            const pricingType = elementclassList[0];
+            const pricing = element.querySelector('${pricingType}__pricing');
+            const price = parseFloat(pricing.textContent.replace('$', ''));
+            const newPrice = (price * rates[currency]).toFixed(2);
+            pricing.textContent = `${currency} $newPrice`;
+
+        });
     });
 
-    updatePrices(currencySelector.value);    
+
+    }
+
+
+
+
+
 
 })
