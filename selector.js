@@ -10,9 +10,11 @@ document.addEventListener("DOMContentLoaded",function(){
         .then(data => data.rates);
     }
 
+    currencySelector.addEventListener("change", function() {
+        const selectedCurrency = currencySelector.value;
+        updatePrices(selectedCurrency);
+    });
 
-
-
-
+    updatePrices(currencySelector.value);    
 
 })
