@@ -4,9 +4,7 @@ document.addEventListener("DOMContentLoaded",function(){
     let previousCurrency = currencySelector.value;
 
     function fetchExchangeRates(currency, previous){
-        console.log(previous + "previo");
         const apiUrl = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${previous.toLowerCase()}.json`;
-
         return fetch(apiUrl)
         .then(response => response.json())
         .then(data => {updatePrices(currency, data[previous.toLowerCase()])});
@@ -32,7 +30,7 @@ document.addEventListener("DOMContentLoaded",function(){
             const pricing = element.querySelector(`.${pricingType}__pricing`);
             const currencyTypeElement = element.querySelector(`.currencyType`);
             const price = parseFloat(pricing.textContent.replace('$', ''));
-            const newPrice = (price * rates[currency.toLowerCase()]).toFixed(2);
+            const newPrice = (price * rates[currency.toLowerCase()]);
             currencyTypeElement.textContent = `${currency}`;
             pricing.textContent = `${Math.round(newPrice)}`;
         });
