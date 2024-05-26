@@ -180,6 +180,12 @@ header .navbar .navbar__menuList.active {
   text-align: center;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+}
+
 .background .background__image {
   height: 16.688em;
   margin-top: 0;
