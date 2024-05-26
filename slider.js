@@ -25,7 +25,7 @@ class Slider{
     }
 
     nextImage(){
-        
+
     }
 
 
