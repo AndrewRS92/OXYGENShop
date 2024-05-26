@@ -18,4 +18,24 @@ function closeModal(){
 
 }
 
-})
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const email = subscriberEmail.value;
+    const data = { email: email };
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            closeModal();
+        })
+
+    });
+});
