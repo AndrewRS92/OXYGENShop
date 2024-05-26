@@ -1038,4 +1038,10 @@ header .navbar .navbar__menuList.active {
   .background .background__image {
     height: 594px;
   }
+}
+.slider img {
+  display: none;
+}
+.slider img:first-child {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
