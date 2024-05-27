@@ -586,6 +586,24 @@ header .navbar .navbar__menuList.active {
   line-height: 42px;
   margin-bottom: 14px;
 }
+.pricing .currency-Selector {
+  /* Estilos para el contenedor del selector */
+  margin-bottom: 20px; /* Espacio inferior para separarlo del siguiente elemento */
+}
+.pricing #currencySelector {
+  /* Estilos para el selector */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pricing #currencySelector option {
+  /* Estilos para las opciones del selector */
+  padding: 10px;
+}
 .pricing .pricing__table .basic {
   position: relative;
   border: 1px solid #FB3B64;
@@ -1041,29 +1059,69 @@ header .navbar .navbar__menuList.active {
 }
 .slider {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   overflow: hidden;
+  margin-bottom: 100px;
+  border-top: 50px solid black;
 }
-.slider img {
-  width: 80%;
-  height: auto;
+.slider .slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
-.slider button {
+.slider .slides-container img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+.slider .slides-container img:first-child {
+  display: block;
+}
+.slider .buttons-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  padding: 10px 0;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+}
+.slider .buttons-container .image-button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.slider .buttons-container .image-button:hover, .slider .buttons-container .image-button.active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.slider #prevButton,
+.slider #nextButton {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   border: none;
+  padding: 10px;
   cursor: pointer;
-  font-size: 1.6rem;
-  z-index: 10;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+.slider #prevButton:hover,
+.slider #nextButton:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .slider #prevButton {
-  left: 1rem;
+  left: 10px;
 }
 .slider #nextButton {
-  right: 1rem;
+  right: 10px;
 }/*# sourceMappingURL=style.css.map */
