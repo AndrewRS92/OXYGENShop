@@ -54,6 +54,8 @@
         padding: 2rem;
         border-radius: 0.5rem;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+		position: relative;
+	}
 
         .closeBtn {
             position: absolute;
@@ -91,7 +93,7 @@
             }
         }
     }
-}
+
 
 .background {
 	.background__image {

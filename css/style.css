@@ -198,27 +198,28 @@ header .navbar .navbar__menuList.active {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  position: relative;
 }
-.modal__content .closeBtn {
+.modal .closeBtn {
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
-.modal__content form {
+.modal form {
   margin-top: 1rem;
 }
-.modal__content form label {
+.modal form label {
   margin-bottom: 0.5rem;
 }
-.modal__content form input[type=email] {
+.modal form input[type=email] {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.3rem;
 }
-.modal__content form button[type=submit] {
+.modal form button[type=submit] {
   padding: 1rem 2rem;
   background: #007bff;
   color: #fff;
@@ -226,7 +227,7 @@ header .navbar .navbar__menuList.active {
   border-radius: 0.3rem;
   cursor: pointer;
 }
-.modal__content form button[type=submit]:hover {
+.modal form button[type=submit]:hover {
   background: #0056b3;
 }
 
@@ -587,12 +588,11 @@ header .navbar .navbar__menuList.active {
   margin-bottom: 14px;
 }
 .pricing .currency-Selector {
-  /* Estilos para el contenedor del selector */
-  margin-bottom: 20px; /* Espacio inferior para separarlo del siguiente elemento */
+  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .pricing #currencySelector {
-  /* Estilos para el selector */
-  width: 100%;
+  width: 4%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -601,7 +601,6 @@ header .navbar .navbar__menuList.active {
   cursor: pointer;
 }
 .pricing #currencySelector option {
-  /* Estilos para las opciones del selector */
   padding: 10px;
 }
 .pricing .pricing__table .basic {
