@@ -55,10 +55,11 @@
 			display: table;
 			position: relative;
 			width: 85%;
-			.aceptar {
-				display: table-cell;
-				vertical-align: middle;
-				margin-right: 10px;
+			input[type="checkbox"].accept {
+				
+				display: block; 
+				margin-top: 12px; 
+				margin-right: 20px; 
 			}
 			p {
 				display: table-cell;
@@ -87,9 +88,24 @@
 			box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
 			border-radius: 35px;
 			margin: 33px 0px 0px 31%;
-			cursor: pointer;
+
 		}
+		.error {
+			color: red;
+			font-size: 12px;
+			display: none; 
+		}
+		
+		
+		input.error-border {
+			border: 2px solid red;
+		}
+		input[type="checkbox"].error-border {
+			outline: 2px solid red;
+		}
+	
 	}
+
 }
 
 

@@ -8,6 +8,29 @@
 		line-height: 42px;
 		margin-bottom: 14px;
 	}
+
+	.currency-Selector {
+		
+		margin-bottom: 10px; 
+		 margin-bottom: 50px;;
+	  }
+	  
+	  #currencySelector {
+		width: 4%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #fff;
+		font-size: 16px;
+		cursor: pointer;
+	  }
+	  
+	  #currencySelector option {
+		
+		padding: 10px;
+	  }
+
+
 	.pricing__table {
 		.basic {
 			&:hover {

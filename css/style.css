@@ -19,6 +19,15 @@ header {
   z-index: 5;
   background-color: #fff;
 }
+header #progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: red;
+  z-index: 10;
+}
 header .navbar {
   position: relative;
   padding-left: 1.563em;
@@ -50,7 +59,6 @@ header .navbar .navbar__menuList .navbar__menuList__item a {
 }
 header .navbar .navbar__menuList .navbar__menuList__item a:hover {
   color: black;
-  cursor: pointer;
 }
 header .navbar .hamburger {
   position: absolute;
@@ -60,6 +68,7 @@ header .navbar .hamburger {
   left: 90%;
   border: none;
   background-color: #fff;
+  z-index: 2;
 }
 header .navbar .hamburger .bar {
   display: block;
@@ -67,6 +76,28 @@ header .navbar .hamburger .bar {
   height: 3px;
   margin: 5px auto;
   background-color: #08A6E4;
+  transition: all 0.3s;
+}
+header .navbar .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+header .navbar .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+header .navbar .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+header .navbar .navbar__menuList.active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -147,6 +178,57 @@ header .navbar .hamburger .bar {
   font-weight: 700;
   position: relative;
   text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.modal__content {
+  background: #fff;
+  width: 80%;
+  max-width: 600px;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.modal .closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.modal form {
+  margin-top: 1rem;
+}
+.modal form label {
+  margin-bottom: 0.5rem;
+}
+.modal form input[type=email] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+.modal form button[type=submit] {
+  padding: 1rem 2rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.modal form button[type=submit]:hover {
+  background: #0056b3;
 }
 
 .background .background__image {
@@ -476,6 +558,24 @@ header .navbar .hamburger .bar {
     top: 75px;
   }
 }
+#returnTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
 .pricing {
   position: relative;
 }
@@ -486,6 +586,22 @@ header .navbar .hamburger .bar {
   font-weight: 400;
   line-height: 42px;
   margin-bottom: 14px;
+}
+.pricing .currency-Selector {
+  margin-bottom: 10px;
+  margin-bottom: 50px;
+}
+.pricing #currencySelector {
+  width: 4%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pricing #currencySelector option {
+  padding: 10px;
 }
 .pricing .pricing__table .basic {
   position: relative;
@@ -812,10 +928,10 @@ header .navbar .hamburger .bar {
   position: relative;
   width: 85%;
 }
-#myform .form__fields .protect__data .aceptar {
-  display: table-cell;
-  vertical-align: middle;
-  margin-right: 10px;
+#myform .form__fields .protect__data input[type=checkbox].accept {
+  display: block;
+  margin-top: 12px;
+  margin-right: 20px;
 }
 #myform .form__fields .protect__data p {
   display: table-cell;
@@ -843,7 +959,17 @@ header .navbar .hamburger .bar {
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 35px;
   margin: 33px 0px 0px 31%;
-  cursor: pointer;
+}
+#myform .form__fields .error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+#myform .form__fields input.error-border {
+  border: 2px solid red;
+}
+#myform .form__fields input[type=checkbox].error-border {
+  outline: 2px solid red;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -929,4 +1055,72 @@ header .navbar .hamburger .bar {
   .background .background__image {
     height: 594px;
   }
+}
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 100px;
+  border-top: 50px solid black;
+}
+.slider .slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider .slides-container img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+.slider .slides-container img:first-child {
+  display: block;
+}
+.slider .buttons-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  padding: 10px 0;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+}
+.slider .buttons-container .image-button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.slider .buttons-container .image-button:hover, .slider .buttons-container .image-button.active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.slider #prevButton,
+.slider #nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+.slider #prevButton:hover,
+.slider #nextButton:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.slider #prevButton {
+  left: 10px;
+}
+.slider #nextButton {
+  right: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -6,25 +6,35 @@
     <title>OxygenShop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
+
+
+   
+
+
     <header>
+        <div id="progress-bar"></div>
         <nav class="navbar">
-            <a><h1 class="menu__logo">OXYGENShop</h1></a>  
+            <a class="menu__logo">OXYGENShop</a>  
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul class="navbar__menuList">
                 <li class="navbar__menuList__item"><a>WHY US</a></li>
                 <li class="navbar__menuList__item"><a>BENEFITS</a></li>
                 <li class="navbar__menuList__item"><a>PRICES</a></li>
                 <li class="navbar__menuList__item"><a>CONTACT</a></li>
-            </ul>
-        </ul>
-        <button class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+            </ul>    
         </nav>    
     </header> 
+
+
     <main>
+
         <section class="main">
             <h2>Sell More!</h2>
             <p>Open a shop on our platform and increase your sales</p>
@@ -32,11 +42,13 @@
                 <p>Open your shop</p>
             </button>
         </section>
-        <div class="background" id="background">
+
+        <div class="background">
             <div class="background__image"></div>
             <p>The most popular sales platform in country</p>
         </div>
-        <section class="statistics" id="stats">
+
+        <section class="statistics">
          <div class="vector">
             <img src="images/Person 2.png" class="person" alt="person">
             <img src="images/redEllipse.png" alt="red_ellip">
@@ -57,7 +69,22 @@
         </div>
         </section>
 
-        <section class="articles" id="articles">
+
+        <div id="subscribeModal" class="modal">
+            <div class="modal__content">
+                <span class="closeBtn">&times;</span>
+                <h2>Subscribe to our newsletter</h2>
+                <form id="subscribeForm">
+                    <label for="subscriberEmail">Email:</label>
+                    <input type="email" id="subscriberEmail" name="subscriberEmail" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <section class="articles">
             <div class="art1">
                 <img src="images/Macbook2 2.png" alt="computer">
                 <img src="images/rombo.png" alt="rombo_rojo">
@@ -67,6 +94,8 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
+
+
             <div class="art2">
                 <img src="images/iPhone2 2.png" alt="phone">
                 <img src="images/EllipsePhone.png" alt="circulo_azul">
@@ -76,6 +105,8 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
+
+
             <div class="art3">
                 <div class="art3__text">
                     <h3>Increase recognition your brand!</h3>
@@ -89,14 +120,26 @@
                 </div>
             </section>
 
-      
-            <section class="pricing" id="pricing">
+
+            <button id="returnTop">↑</button>
+
+            <section class="pricing">
                 <h3>Pricing</h3>
+                
+                <div class="currency-Selector">
+                    <select id="currencySelector">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+
                 <div class="pricing__table">
                     <div class="basic">
                         <div class="basic__tittle">
                             <p class="txt">Basic</p>
-                            <p class="basic__pricing">$0</p>
+                            <p class="currencyType">EUR</p>
+                            <p class="basic__pricing">0</p>
                         </div>
                         <ul>
                             <li><img src="images/Checkbox.png"> MB HDD</li>
@@ -112,7 +155,8 @@
                     <div class="prof">
                         <div class="prof__tittle">
                             <p class="txt">Professional</p>
-                            <p class="prof__pricing">$25</p>
+                            <p class="currencyType">EUR</p>
+                            <p class="prof__pricing">25</p>
                             <p class="sub">Limited offer</p>
                         </div>
                         <ul>
@@ -129,7 +173,8 @@
                     <div class="premium">
                         <div class="premium__tittle">
                             <p class="txt">Premium</p>
-                            <p class="premium__pricing">$60</p>
+                            <p class="currencyType">EUR</p>
+                            <p class="premium__pricing">60</p>
                             <p class="sub">Limited offer</p>
                         </div>
                         <ul>
@@ -144,15 +189,29 @@
                         </button>
                     </div>
         </section>  
-
- 
-            <form id="myform">
+        
+        <div id="slider" class="slider">
+            <div class="slides-container">
+                <img src="images/slider1.jpg" alt="computer active">
+                <img src="images/slider2.jpg" alt="sky">
+                <img src="images/slider3.jpg" alt="montain">
+                <img src="images/slider4.jpg" alt="city">
+                <img src="images/slider5.jpg" alt="elephant">
+            </div>
+        
+            <div class="buttons-container"></div> 
+            
+            <button id="prevButton">&#9664;</button>
+            <button id="nextButton">&#9654;</button>
+        </div>
+    </main>
+            <form id="myform" class="myform">
             <div class="form__text">
                 <h3>Any questions?</h3>
                 <p class="form__sub">Leave your email address or call us!</p>
                 <div class="form__data">
-                    <p class="data__contact"><img src="images/envelope.png">info@bestshop.xyz</p>
-                    <p class="data__contact"><img src="images/phone (1).png">123 456 789</p>
+                    <p class="data__contact"><img src="images/envelope.png">andrew.rojas.saldias@gmail.com</p>
+                    <p class="data__contact"><img src="images/phone (1).png">618 29 29 13</p>
                 </div>
             </div>
             <div class="form__fields">           
@@ -166,7 +225,11 @@
                         I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)                            
                     </p>                        
                 </div>
+
+                <span class="error" id="consentError"></span><br>
                 <button type="submit" id="send">Send</button>
+        </div>
+            </form>
 
 
         <footer class="footer">
@@ -177,6 +240,13 @@
                 <a href="https://facebook.com" target="_blank"><img src="images/logoFace.png" alt="logo facebook"></a>
             </div>
         </footer>
-    </main>
+        <script src="subscribeModal.js"></script>
+
+        <script src="main.js"></script>
+        <script src="scroll.js"></script>
+        <script src="btnTop.js"></script>
+        <script src="validation.js"></script>
+        <script src="selector.js"></script>
+        <script src="slider.js"></script>
 </body>
 </html>

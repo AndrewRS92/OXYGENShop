@@ -1,0 +1,82 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+    border-top: 50px solid black;
+  
+    .slides-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display: none;
+      }
+  
+      img:first-child {
+        display: block;
+      }
+    }
+  
+    .buttons-container {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      padding: 10px 0;
+      background-color: black; 
+      width: 100%; 
+      justify-content: center; 
+  
+      .image-button {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+  
+        &:hover,
+        &.active {
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  
+    #prevButton,
+    #nextButton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 20px; 
+  
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  
+    #prevButton {
+      left: 10px;
+      &::before { 
+      }
+    }
+  
+    #nextButton {
+      right: 10px;
+      &::before { 
+      }
+    }
+  }
+  
